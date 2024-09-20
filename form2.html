@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application :: Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+  body {
+    font-family: roboto;
+    color: rgb(33, 33, 33);
+    margin: 0;
+    height: 100vh;
+  }
+  .navbar .navbar-nav > li > a {
+  /* padding: 27px 15px; */
+  font-size: 19px;
+} 
+
+.navbar-nav > li{
+margin-left:30px;
+margin-right:30px;
+}
+h1 > span {
+ color: rgb(21, 238, 21);
+}
+
+.about-text {
+font-weight: bold;
+font-size: 35px;
+}
+
+.user {
+display: flex;
+align-items: center;
+
+}
+
+
+.footer ul li {
+text-decoration: none;
+list-style: none;
+}
+.footer  a {
+text-decoration: none;
+color: black;
+padding-top: 10px;
+display: block;
+
+
+
+} 
+  
+
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-4" href="index.html"><img width="80px" class="img-fluid" src="images/IMG-20240908-WA0005.jpg" alt="Techpro Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success" href="form.html" href="">Register Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col">
+        <div class="text-center mt-3">
+
+          <h1 class="display-4">Application Form</h1>
+
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mx-auto col-md-8 col-lg-9 mt-5">
+          <div class="card mt-2">
+              <div class="card-header bg-success text-white">STEP 2/2 - OTHER INFO   </div>
+              <div class="card-body">
+                  <form action="" method="POST"
+                      enctype="multipart/form-data">
+                      
+                      <div class="form-group  mt-2">
+                          <label for="next_of_kin_phone">Next of kin phone number</label>
+                          <input name="next_of_kin_phone" type="number" class="form-control  mt-2" 
+                              value="">
+                          
+                      </div>
+                      <div class="form-group  mt-2">
+                          <label for="address">Permanent address</label>
+                          <input name="address" type="text" class="form-control  mt-2" value="">
+                          
+                      </div>
+                      <div class="form-group mt-2">
+                          <label for="department_id">Department</label>
+                          <select id="department_id" name="department_id" class="form-control  mt-2">
+                              <option value=''>Select a dept</option>
+                             
+                          </select>
+                          
+                      </div>
+                      <div class="form-group mt-2">
+                          <label class="mb-2" for="class_method">Preferred Class Method</label><br>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="class_method" id="class_method_online"
+                                  >
+                              <label class="form-check-label" for="class_method_online">Online</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="class_method"
+                                  id="class_method_physical" value="physical"
+                                  >
+                              <label class="form-check-label" for="class_method_physical">Physical</label>
+                          </div>
+                          
+                      </div>
+                      <div class="form-group mt-2">
+                          <label class="mb-2 mt-2" for="skill_monetization">Skill Monetization</label><br>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="skill_monetization"
+                                  id="skill_monetization_yes" value="yes"
+                                  >
+                              <label class="form-check-label" for="skill_monetization_yes">Yes</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="skill_monetization"
+                                  id="skill_monetization_no" value="no"
+                                  >
+                              <label class="form-check-label" for="skill_monetization_no">No</label>
+                          </div>
+                          <span class="text-danger">
+                              
+                          </span>
+                      </div>
+  
+                      <div class="form-group mt-2">
+                          <label class="mb-2 mt-2" for="payment_method">Method Of Payment</label><br>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="payment_method"
+                                  id="payment_method_one_time" value="one-time"
+                                  >
+                              <label class="form-check-label" for="payment_method_one_time">One Time</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="payment_method"
+                                  id="payment_method_installments" value="installments"
+                                  >
+                              <label class="form-check-label" for="payment_method_installments">Installments</label>
+                          </div>
+                          
+                      </div>
+                      <div class="form-group mt-2">
+                          <label class="mb-2 mt-2" for="hostel">Hostel Accommodation</label><br>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="hostel" id="hostel_yes"
+                                  value="">
+                              <label class="form-check-label" for="hostel_yes">Yes</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="hostel" id="hostel_no"
+                                  value="">
+                              <label class="form-check-label" for="hostel_no">No</label>
+                          </div>
+                          
+                      </div>
+                      <div class="form-group mt-2">
+                          <label class="mb-2 mt-2" for="wifi">School WiFi</label><br>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="wifi" id="wifi_yes"
+                                  value="">
+                              <label class="form-check-label" for="wifi_yes">Yes</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="wifi" id="wifi_no"
+                                  value="" >
+                              <label class="form-check-label" for="wifi_no">No</label>
+                          </div>
+                          
+                      </div>
+                      <div class="form-group mt-3">
+                          <label for="passport">Upload Passport</label>
+                          <input name="passport" type="file" class="form-control  mt-2">
+                          
+                      </div>
+                      <div class="form-group mt-3">
+                          <label for="terms" class="d-block">
+                              <input type="checkbox" id="terms" name="terms"> You  agree with our
+                              <a href="">Terms and Conditions</a>
+                          </label>
+                          <span class="text-danger">
+                             
+                      </div>
+                     
+                      <button style="float: right" type="submit" class="btn btn-success mt-3">Submit</button>
+                      
+                  </form>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+   
+</div>
+
+<footer style="background-color: whitesmoke; padding: 40px 0; margin-top: 10%;">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- TechPro and Social Media Section -->
+      <div class="col-lg-2 col-md-6 col-sm-12 footer">
+        <h1 class="fw-bold text-success">TechPro</h1>
+        <p class="fs-6 fw-light mb-2">Follow Us On</p>
+        <div class="d-flex">
+          <a href="#" class="me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+          <a href="#" class="me-3"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+        </div>
+      </div>
+      
+      <!-- Courses Section -->
+      <div class="col-lg-2 col-md-6 col-sm-12 footer">
+        <h4 class="fw-bold">Courses</h4> 
+        <ul class="list-unstyled">
+          <li><a class="fs-6 fw-light" href="#">Web Development</a></li>
+          <li><a class="fs-6 fw-light" href="#">Graphics Design</a></li>
+          <li><a class="fs-6 fw-light" href="#">Cyber Security</a></li>
+          <li><a class="fs-6 fw-light" href="#">UI/UX Design</a></li>
+          <li><a class="fs-6 fw-light" href="#">Animation</a></li>
+          <li><a class="fs-6 fw-light" href="#">3D Modelling</a></li>
+        </ul>
+      </div>
+      
+      <!-- Resources Section -->
+      <div class="col-lg-2 col-md-6 col-sm-12 footer">
+        <h4 class="fw-bold">Our Partners</h4>
+        <ul class="list-unstyled">
+          <li><a class="fs-6 fw-light" href="#">StallionCare</a></li>
+          <li><a class="fs-6 fw-light" href="#">Digital Shortlet</a></li>
+          <li><a class="fs-6 fw-light" href="#">TechPro Consultancy</a></li>
+          <li><a class="fs-6 fw-light" href="#">Frika Xchange</a></li>
+          <li><a class="fs-6 fw-light" href="#">Osun State Government</a></li>
+        </ul>
+      </div>
+      
+      <!-- Legal Section -->
+      <div class="col-lg-3 col-md-6 col-sm-12 footer">
+        <h4 class="fw-bold">Legal</h4>
+        <ul class="list-unstyled">
+          <li><a class="fs-6 fw-light" href="#">Terms Of Use</a></li>
+          <li><a class="fs-6 fw-light" href="#">Privacy Policy</a></li>
+          <li><a class="fs-6 fw-light" href="#">Legal Notice</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Section -->
+      <div class="col-lg-3 col-md-6 col-sm-12 footer">
+        <h4 class="fw-bold">Contact</h4>
+        <p class="fs-6 fw-light">103 Gbodofon Street, Ibadan Road, Osogbo.</p>
+        <p class="fs-6 fw-light">Phone: 08054324036, 07098765432</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+</body>
+</html>
