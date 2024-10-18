@@ -11,14 +11,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
-    body {
+    /* body {
       font-family: roboto;
       color: rgb(33, 33, 33);
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
       height: 500vh;
-    }
+    } */
 /* Carousel Text Styling */
 .carousel-caption {
   position: absolute;
@@ -230,9 +227,10 @@ h1 span {
 }
 .footer  a {
   text-decoration: none;
-  color: black;
+  color: #A8BBF7;
   padding-top: 10px;
   display: block; 
+  font-size: 16px;
 } 
 .register{
   font-size: x-small;
@@ -294,48 +292,6 @@ h1 span {
 }
 
 
-
-/* .incubation-section {
-    background-color: #0A5098; 
-    color: white;
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-} */
-
-/* .container-incubation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 20px;
-} */
-
-/* .content {
-    max-width: 50%;
-} */
-
-/* h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-} */
-
-/* .subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-} */
-
-/* .description {
-    font-size: 1rem;
-    margin-bottom: 40px;
-    max-width: 500px;
-    line-height: 1.6;
-} */
-
  .explore-btn {
     display: inline-block;
     padding: 10px 50px;
@@ -350,7 +306,7 @@ h1 span {
     margin-top: 50px;
 }  
 
-.gallery-btn{
+ .gallery-btn{
     padding: 15px 50px;
     background-color:  #E4C939; 
     color: #0A5098; 
@@ -359,23 +315,13 @@ h1 span {
     border-radius: 50px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-
-
-}
+} 
 
  .explore-btn:hover {
     background-color: #e6b800;
 } 
 
-/* .image {
-    max-width: 50%;
-}
 
-.image img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-} */
 
 .subtitle {
   font-size: 24px;
@@ -383,12 +329,12 @@ h1 span {
 
 
 }
-.content-text {
-  margin-top: 35px;
-}
+ .content-text {
+  margin-top: 10%;
+} 
 
 .description {
-  font-size: 12px;
+  font-size: 16px;
   color: #A8BBF7;
 }
 .incubation-section {
@@ -398,14 +344,33 @@ h1 span {
 }
 
 .img-container{
-  margin-top: 60px;
+  margin-top: 24%;
 }
+
+@media screen and(max-width:1212px) {
+.explore-btn {
+  margin-top: -30px;
+
+}
+}
+
+
+@media screen and (max-width:1199px ) {
+  .explore-btn {
+    margin-top: -6px;
+  }
+  .incubation-section {
+    height: 60vh;
+  }
+
+}
+
 @media screen and (max-width: 990px) {
   .inc-img{
     width: 400px;
   }
   .content-text {
-    margin-top: 10px;
+    margin-top: 8%;
   }
   .explore-btn {
     margin-top: 10px;
@@ -418,20 +383,116 @@ h1 span {
   }
   .explore-btn {
     font-size: small;
+    
   }
  
   
   
 }
 
-.gallery-section {
-  margin-top: 10%;
+@media screen and (max-width:751px) {
+
+  .incubation-section {
+    height: 90vh;
+  }
+
 }
 
-.gallery-layout {
-  display: grid;
-  grid-template-columns: 2fr, 1fr;
+
+@media screen and (max-width:547px) {
+
+.incubation-section {
+  height: 80vh;
 }
+
+}
+
+@media screen and (max-width:375px) {
+
+.incubation-section {
+  height: 105vh;
+}
+
+}
+.gallery-layout {
+  display: flex;
+   justify-content: space-between;
+}
+.gallery-img {
+  width: 70%;
+}
+.gallery-btn-layout {
+
+  text-align: center;
+   margin-top: 60%;
+}
+
+@media screen and (max-width: 1163px) {
+  .gallery-btn{
+    padding: 15px 40px; 
+    font-size: 20px;
+   
+} 
+
+}
+@media screen and (max-width: 975px) {
+  .gallery-btn{
+    padding: 15px 30px; 
+    font-size: 18px;
+   
+} 
+
+}
+
+@media screen and (max-width: 837px) {
+  .gallery-btn{
+    padding: 15px 25px; 
+    font-size: small;
+   
+} 
+
+}
+@media screen and (max-width: 665px) {
+  .gallery-btn{
+    padding: 8px 10px; 
+    font-size: x-small;
+   
+} 
+
+}
+
+.register-btn {
+    padding: 15px 50px;
+    background-color:  #E4C939; 
+    color: #0A5098; 
+    font-size: 25px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+
+}
+
+@media screen and (max-width:508px) {
+
+  .img{
+    width: 100px;
+  }
+}
+.follow {
+   color: #FFE30D;
+}
+
+.text {
+  color: #A8BBF7;
+  font-size: 16px;
+}
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -746,9 +807,9 @@ h1 span {
     </div>
    </section>
 
-   <section class="incubation-section">
+   <section style="margin-top: 10%;" class="incubation-section">
     <div class="container">
-      <div class="row">
+      <div  class="row">
         <div  class="col-lg-6 content-text">
           <div>
             <h1 style="font-size: 36px;" class="text-white">Incubation</h1>
@@ -756,13 +817,10 @@ h1 span {
             <p class="description">Tech Pro Nigeria is committed to fostering entrepreneurship and supporting startups within Osun State by providing an incubating platform and essential resources.</p>
             <a href="#" class="explore-btn">Explore Our Incubation Programs</a>
           </div>
-
-          
-        
         </div>
         <div class="col-lg-6">
           <div class="img-container">
-            <img  src="images/unsplash_IgUR1iX0mqM.png" class="img-fluid inc-img" alt="">
+            <img style="width: 100%;" src="images/unsplash_IgUR1iX0mqM.png" class="img-fluid inc-img" alt="">
           </div>
         </div>
       </div>
@@ -770,111 +828,186 @@ h1 span {
 
    </section>
 
-  <section>
-    <div class="container-fluid">
-      <div style="display: grid; grid-template-columns: 2fr, 1fr;">
-        <div>
-          <img src="images/image 43.png" alt="">
-        </div>
-        <div>
-          <a href=""></a>
 
-        </div>
-
-
-      </div>
-    
-    
-    
-    </div>
+   <div style="margin-top: 10%;" class="container-fluid">
+    <div class="gallery-layout">
+      <img class="gallery-img" src="images/image 43.png" alt="">
+      <div style="background-color: #0A5098; width: 30%;">
+          <div class="gallery-btn-layout">
+            <a href="" class="gallery-btn">View Our Gallery</a> 
+          </div>
         
+      </div>
+    </div>
+   </div>
+
+   <div style="margin-top: 8%;" class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center">Tech-For-Teen Program</h1>
+        <p style="font-size: 20px;">The Tech-For-Teen Program is an engaging, introductory tech initiative designed to inspire and develop  a tech-savy  mindset in secondary school students and those awaiting higher education.Through hands-on  workshops, coding sessions, and creative problem-solving activities,participants gain foundational knowledge in emerging technologies,such as coding, Ai, and robotics.The program empowers teens to explore their passion for technology, enhance critical thinking skills, and prepare for future oppurtunities in the digital word </p>
+      </div>
+    </div>
+   </div>
+
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+      <h1 style="font-size: 35px; color: #105697;" class="text-center">Benefits</h1>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6 col-lg-4 text-center">
+        <h1 style="font-size: 18px;" class="">Monthly Payment</h1>
+        <img class="img-fluid mt-2" src="images/unsplash_Q59HmzK38eQ (1).png" alt="">
+        <p style="font-size: 20px;">Monthly Payment, similar to a regular tutoring program</p>
+      </div>
     
+      <div class="col-md-6 col-lg-4 text-center">
+        <h1 style="font-size: 18px;" class="mt-2">Laptop Access</h1>
+        <img class="img-fluid" src="images/unsplash_WB3ujiKLJwQ.png" alt="">
+        <p style="font-size: 20px;">No need to worry about extra costs- we provide your child with a laptop and internet access to practice at the end of each class </p>
+      </div>
     
+      <!-- Force break after this column on medium screens -->
+      <div class="w-100 d-md-none"></div>
+    
+      <div class="col-md-12 col-lg-4 text-center">
+        <h1 style="font-size: 18px;" class="">Weekend Classes</h1>
+        <img class="img-fluid" width="250px" src="images/unsplash_HMJIGc8iIKs.png" alt="">
+        <p style="font-size: 20px;" class="mt-5">The program is offered on weekends at your convenience-morning, afternoon, or evening- for a duration of three months</p>
+      </div>
+    </div>
 
-
-   </section> 
-
-   <section style="background-color: whitesmoke;">
-    <div class="container">
-      <div style="margin-top: 13%;" class="row text-center">
-        <div class="col col-md-4 mt-4">
-        <i  class="bi bi-people-fill fs-1"></i>
-        <h1>200+</h1>
-        <p class="fw-light fs-1">Students</p>
-        </div>
-        <div class="col col-md-4 mt-4">
-          <i class="bi bi-book fs-1"></i>
-          <h1>20+</h1>
-          <p class="fw-light fs-1">Courses</p>
-  
-        </div>
-        <div class="col col-md-4 mt-4">
-        <i  class="bi bi-people-fill fs-1"></i>
-        <h1>24+</h1>
-        <p class="fw-light fs-1">Instructors</p>
-  
-        </div>
-  
+    <div style="margin-top: 8%;" class="row">
+      <div class="col text-center">
+        <a class="register-btn" href="" >Register Now</a>
       </div>
     </div>
     
+   </div>
+
+   <section style="background-color: #0A5098; margin-top: 10%;height: 40vh;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col text-center mt-5">
+          <h1 style="font-size: 36px; color: #E4C939; padding-top: 25px;">Our Partners</h1>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col text-center">
+          <img class="img" src="images/image 15.png" alt="">
+        </div>
+        <div class="col text-center">
+          <img class="img" src="images/image 19.png" alt="">
+        </div>
+        <div class="col text-center">
+          <img class="img" src="images/image 16.png" alt="">
+        </div>
+        <div class="col text-center">
+          <img class="img" src="images/image 21.png" alt="">
+        </div>
+        <div class="col text-center">
+          <img class="img" src="images/image 17.png" alt="">
+        </div>
+        <div class="col text-center">
+          <img class="img mt-2" src="images/image 20.png" alt="">
+        </div>
+        <div class="col text-center">
+          <img class="img" src="images/image 18.png" alt="">
+        </div>
+      </div>
+       
+</div>
+
    </section>
 
 
-   <footer style="background-color: rgb(246, 233, 233); padding: 40px 0; margin-top: 10%;">
+   <section >
+    <div class="container">
+      <div style="margin-top: 6%;" class="row text-center">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <img src="images/mdi_users.png" alt="">
+              <h1 style="font-size: 20px; font-weight: bold;">300+</h1>
+              <p style="font-size: 20px;">Students</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <img src="images/arcticons_bookshelf.png" alt="">
+              <h1 style="font-size: 20px; font-weight: bold;">10+</h1>
+              <p style="font-size: 20px;">Courses</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <img src="images/mdi_locations.png" alt="">
+              <h1 style="font-size: 20px; font-weight: bold;">3+</h1>
+              <p style="font-size: 20px;">Countries</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <img src="images/icon-park_health-products.png" alt="">
+              <h1 style="font-size: 20px; font-weight: bold;">3+</h1>
+              <p style="font-size: 20px;">Products</p>
+          </div>
+      </div>
+  </div>
+  
+  
+   </section>
+
+
+   <footer style="background-color: #0A5098; padding: 40px 0; margin-top: 6%;">
   <div class="container">
     <div class="row gy-4">
       <!-- TechPro and Social Media Section -->
       <div class="col-lg-2 col-md-6 col-sm-12 footer">
-        <h1 class="fw-bold text-success">TechPro</h1>
-        <p class="fs-6 fw-light mb-2">Follow Us On</p>
+        <h1 class="fw-bold"><span style="color: #E21C1C;">Tech</span>Pro</h1>
+        <p class="fs-6 fw-light mb-2 follow">Follow Us On</p>
         <div class="d-flex">
-          <a href="#" class="me-3"><i class="bi bi-whatsapp fs-4"></i></a>
-          <a href="#" class="me-3"><i class="bi bi-facebook fs-4"></i></a>
-          <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+          <a href="#" class="me-3 "><i class="bi bi-whatsapp fs-4 follow"></i></a>
+          <a href="#" class="me-3 "><i class="bi bi-facebook fs-4 follow"></i></a>
+          <a href="#"><i class="bi bi-twitter fs-4 follow"></i></a>
         </div>
       </div>
       
       <!-- Courses Section -->
       <div class="col-lg-2 col-md-6 col-sm-12 footer">
-        <h4 class="fw-bold">Courses</h4> 
+        <h4 class="fw-bold follow">Courses</h4> 
         <ul class="list-unstyled">
-          <li><a class="fs-6 fw-light" href="#">Web Development</a></li>
-          <li><a class="fs-6 fw-light" href="#">Graphics Design</a></li>
-          <li><a class="fs-6 fw-light" href="#">Cyber Security</a></li>
-          <li><a class="fs-6 fw-light" href="#">UI/UX Design</a></li>
-          <li><a class="fs-6 fw-light" href="#">Animation</a></li>
-          <li><a class="fs-6 fw-light" href="#">3D Modelling</a></li>
+          <li><a class="fs-6 fw-light text" href="#" >Web Development</a></li>
+          <li><a class="fs-6 fw-light text" href="#">Graphics Design</a></li>
+          <li><a class="fs-6 fw-light text" href="#">Cyber Security</a></li>
+          <li><a class="fs-6 fw-light text" href="#">UI/UX Design</a></li>
+          <li><a class="fs-6 fw-light text" href="#">Animation</a></li>
+          <li><a class="fs-6 fw-light text" href="#">3D Modelling</a></li>
         </ul>
       </div>
       
       <!-- Resources Section -->
       <div class="col-lg-2 col-md-6 col-sm-12 footer">
-        <h4 class="fw-bold">Our Partners</h4>
+        <h4 class="fw-bold follow">Our Partners</h4>
         <ul class="list-unstyled">
-          <li><a class="fs-6 fw-light" href="#">StallionCare</a></li>
-          <li><a class="fs-6 fw-light" href="#">Digital Shortlet</a></li>
-          <li><a class="fs-6 fw-light" href="#">TechPro Consultancy</a></li>
-          <li><a class="fs-6 fw-light" href="#">Frika Xchange</a></li>
-          <li><a class="fs-6 fw-light" href="#">Osun State Government</a></li>
+          <li><a class="fs-6 fw-light  text" href="#">StallionCare</a></li>
+          <li><a class="fs-6 fw-light text" href="#">Digital Shortlet</a></li>
+          <li><a class="fs-6 fw-light text" href="#">TechPro Consultancy</a></li>
+          <li><a class="fs-6 fw-light text" href="#">Frika Xchange</a></li>
+          <li><a class="fs-6 fw-light text" href="#">Osun State Government</a></li>
         </ul>
       </div>
       
       <!-- Legal Section -->
       <div class="col-lg-3 col-md-6 col-sm-12 footer">
-        <h4 class="fw-bold">Legal</h4>
-        <ul class="list-unstyled">
-          <li><a class="fs-6 fw-light" href="#">Terms Of Use</a></li>
-          <li><a class="fs-6 fw-light" href="#">Privacy Policy</a></li>
-          <li><a class="fs-6 fw-light" href="#">Legal Notice</a></li>
+        <h4 class="fw-bold follow">Legal</h4>
+        <ul class="list-unstyled ">
+          <li><a class="fs-6 fw-light  text" href="#">Terms Of Use</a></li>
+          <li><a class="fs-6 fw-light text" href="#">Privacy Policy</a></li>
+          <li><a class="fs-6 fw-light text" href="#">Legal Notice</a></li>
         </ul>
       </div>
       
       <!-- Contact Section -->
       <div class="col-lg-3 col-md-6 col-sm-12 footer">
-        <h4 class="fw-bold">Contact</h4>
-        <p class="fs-6 fw-light">103 Gbodofon Street, Ibadan Road, Osogbo.</p>
-        <p class="fs-6 fw-light">Phone: 08054324036, 07098765432</p>
+        <h4 class="fw-bold follow">Contact</h4>
+        <p class="fs-6 fw-light text">103 Gbodofon Street, Ibadan Road, Osogbo.</p>
+        <p class="fs-6 fw-light text">Phone: 08054324036, 07098765432</p>
       </div>
     </div>
   </div>
