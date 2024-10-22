@@ -4,6 +4,7 @@
   margin-top: 60px;
   margin-right: 180px;
   border-radius: 15px;
+  
 }
 
 .links ul li a {
@@ -99,13 +100,12 @@
   .contact-top {
     margin: 1%
   }
-  
+
   .home {
     font-size: 25px;
   }
 
 }
-
 
 h1 a {
   text-decoration: none;

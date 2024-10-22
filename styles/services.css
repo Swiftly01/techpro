@@ -99,6 +99,9 @@ font-size: 19px;
    .main {
      padding-top: 150px;
    }
+   h1 a {
+  text-decoration: none;
+   }
 
    @media screen and (max-width:975px) {
      .main {
