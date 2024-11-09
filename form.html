@@ -7,11 +7,11 @@
   <link rel="icon" href="images/techpro_img.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles/gallery.css">
+  <link rel="stylesheet" href="styles/about-u.css">
+  <link rel="stylesheet" href="styles/nav.css">
   
   
   <style>
- 
   </style>
 </head>
 <body>
@@ -42,14 +42,14 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item d-lg-none">
-                    <a href="form.html" class="nav-link">
+                    <a href="about-u.html" class="nav-link">
                         <button class="register">Register Now</button>
                     </a>
                 </li>
             </ul>
         </div>
 
-        <a href="form.html" class="me-4 d-none d-lg-block">
+        <a href="about-u.html" class="me-4 d-none d-lg-block">
             <button class="register">Register Now</button>
         </a>
     </div>
@@ -57,49 +57,61 @@
 
 
 
- <div  class="container">
+ <div   class="container">
   <div  class="row main">
     <div class="col">
       <!-- <h1  class="text-danger home">Home/Services</h1> -->
-      <h1 ><a class=" text-danger home" href="index.html">Home/</a><a class=" text-danger home" href="gallery.html">Gallery</a></h1>
+      <h1 ><a class=" text-danger home" href="index.html">Home/</a><a class=" text-danger home" href="">Application</a></h1>
     </div>
   </div>
  </div> 
 
- <div class="container">
-  <div class="row">
-    <div class="col-lg-4 col-md-12">
-      <div class="links">
-        <ul>
-          <li><a href=""><h1 class="our">Our Spaces</h1></a></li>
-          <li><img class="mb-1" src="images/mdi-light_arrow-right (1).png" alt=""> <a href="gaming.html">Gaming</a></li>
-          <li><img class="mb-1" src="images/mdi-light_arrow-right (1).png" alt=""> <a href="hostel.html">Hostel Facilities</a></li>
-          <li><img class="mb-1" src="images/mdi-light_arrow-right (1).png" alt=""> <a href="working.html">Co-Working Space</a></li>
-        </ul>
-      </div>
+
+ <div class="container mt-5">
+  <div style="background-color: whitesmoke;" class="row">
+    <div class="col-lg-6 col-md-12">
+      <form action="payment.html" method="POST">
+    <h1 class="about ms-5">Registration Form</h1>
+    <div class="mb-3">
+        <label for="firstName" class="form-label mt-2 ms-5 label-name">FirstName</label>
+        <input style="width: 80%;" type="text" class="form-control  ms-5" id="firstName" name="firstName" placeholder="John" required>
     </div>
+    <div class="mb-3">
+        <label for="lastName" class="form-label mt-2 ms-5 label-name">LastName</label>
+        <input style="width: 80%;" type="text" class="form-control  ms-5" id="lastName" name="lastName" placeholder="Doe" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label mt-2 ms-5 label-name">Email</label>
+        <input style="width: 80%;" type="email" class="form-control ms-5" id="email" name="email" placeholder="name@example.com" required>
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label mt-2 ms-5 label-name">Phone No</label>
+        <input style="width: 80%;" type="number" class="form-control ms-5" id="phone" name="phone" placeholder="1234567890" required>
+    </div>
+    <label for="phone" class="form-label mt-2 ms-5 label-name">Courses</label>
+    <select style="width: 80%;" class="form-select ms-5 mb-3" aria-label="Default select example">
+      <option selected>Choose Course</option>
+      <option value="1">Front-End Development</option>
+      <option value="2">Back-End Development</option>
+      <option value="3">Cyber Security</option>
+    </select>
+    
+    <div class="mb-3">
+        <label for="pitchDeck" class="form-label  ms-5 label-name">Upload Pitch Deck</label>
+        <input style="width: 80%;" type="file" class="form-control mt-2 ms-5" id="pitchDeck" name="pitchDeck" required>
+    </div>
+    <button type="submit" class="submit-btn ms-5 mb-5">Submit</button>
+</form>
 
-    <div class="col-lg-8 col-md-12">
-      <div class="row">
-        <div class="col">
-          <img src="images/DSC_4896.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="col">
-          <img width="100%" src="images/DSC_4914.jpg" class="img-fluid" alt="">
-        </div>
-      </div>
 
-      <div class="row mt-4">
-        <div class="col">
-          <img src="images/DSC_4906.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="col">
-         <img width="100%" height="78%" src="images/DSC_4927.jpg" class="img-fluid" alt=""> 
-        </div>
-      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 p-0">
+      <img  src="images/IMG_2590.DNG" class="img-fluid" alt="">
+
     </div>
   </div>
-</div>
+ </div>
+
 
 
 
@@ -145,7 +157,7 @@
       <div class="col-lg-2 col-md-6 col-sm-12 footer">
         <h4 class="fw-bold follow">Links</h4>
         <ul class="list-unstyled">
-          <li><a class="fs-6 fw-light  text" href="gaming.html">Gaming</a></li>
+          <li><a class="fs-6 fw-light  text" href="gaming.html"></a>Gaming</li>
           <li><a class="fs-6 fw-light text" href="events.html">Events</a></li>
           <li><a class="fs-6 fw-light  text" href="">Texh-A-Child</a></li>
           <li><a class="fs-6 fw-light text" href="#">Meetups</a></li>
@@ -173,7 +185,6 @@
         <h4 class="fw-bold follow">Contact</h4>
         <p class="fs-6 fw-light text">103 Gbodofon Street, Ibadan Road, Osogbo.</p>
         <p class="fs-6 fw-light text">Phone: 08086478810</p>
-        <p class="fs-6 fw-light text">E-mail: contact@techprong.com</p>
       </div>
     </div>
   </div>
