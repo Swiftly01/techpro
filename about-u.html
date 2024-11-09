@@ -70,34 +70,35 @@
  <div class="container mt-5">
   <div style="background-color: whitesmoke;" class="row">
     <div class="col-lg-6 col-md-12">
-      <form action="">
-        <h1 class="about ms-5">Registration Form</h1>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label mt-2 ms-5 label-name">FirstName</label>
-        <input style="width: 80%;" type="text" class="form-control mt-2 ms-5 " id="exampleFormControlInput1" placeholder="John">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label  mt-2 ms-5 label-name ">LastName</label>
-        <input style="width: 80%;" type="text" class="form-control mt-2 ms-5" id="exampleFormControlInput1" placeholder="Doe">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label  mt-2 ms-5 label-name ">Email</label>
-        <input style="width: 80%;" type="email" class="form-control mt- ms-5  " id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label  mt-2  ms-5 label-name  ">Phone No</label>
-        <input style="width: 80%;" type="number" class="form-control mt-2 ms-5   " id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label  mt-2 ms-5 label-name ">Summary of your idea</label>
-        <textarea style="width: 80%;" class="form-control mt-2  ms-5 " id="exampleFormControlTextarea1" placeholder="Write brief summary about your idea" rows="3"></textarea>
-      </div>
+      <form action="payment.html" method="POST">
+    <h1 class="about ms-5">Registration Form</h1>
+    <div class="mb-3">
+        <label for="firstName" class="form-label mt-2 ms-5 label-name">FirstName</label>
+        <input style="width: 80%;" type="text" class="form-control mt-2 ms-5" id="firstName" name="firstName" placeholder="John" required>
+    </div>
+    <div class="mb-3">
+        <label for="lastName" class="form-label mt-2 ms-5 label-name">LastName</label>
+        <input style="width: 80%;" type="text" class="form-control mt-2 ms-5" id="lastName" name="lastName" placeholder="Doe" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label mt-2 ms-5 label-name">Email</label>
+        <input style="width: 80%;" type="email" class="form-control mt-2 ms-5" id="email" name="email" placeholder="name@example.com" required>
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label mt-2 ms-5 label-name">Phone No</label>
+        <input style="width: 80%;" type="number" class="form-control mt-2 ms-5" id="phone" name="phone" placeholder="1234567890" required>
+    </div>
+    <div class="mb-3">
+        <label for="summary" class="form-label mt-2 ms-5 label-name">Summary of your idea</label>
+        <textarea style="width: 80%;" class="form-control mt-2 ms-5" id="summary" name="summary" placeholder="Write a brief summary about your idea" rows="3" required></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="pitchDeck" class="form-label mt-2 ms-5 label-name">Upload Pitch Deck</label>
+        <input style="width: 80%;" type="file" class="form-control mt-2 ms-5" id="pitchDeck" name="pitchDeck" required>
+    </div>
+    <button type="submit" class="submit-btn ms-5 mb-5">Submit</button>
+</form>
 
-      <input class="ms-5 mt-3" placeholder="Upload pitch deck" id="search" type="text">
-
-      <button type="submit" class="submit-btn ms-5 mb-5">Submit</button>
-      
-      </form>
 
     </div>
     <div class="col-lg-6 col-md-12 p-0">
